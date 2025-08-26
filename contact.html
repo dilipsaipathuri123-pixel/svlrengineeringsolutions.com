@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry - SVLR ENGINEERING SOLUTIONS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo" onclick="window.location.href='index.html'">
+                <div class="logo-icon">
+                    <img src="logo.png" alt="SVLR Logo" class="logo-image">
+                </div>
+                <img src="company name.png" alt="SVLR Company Name" class="company-name-image">
+            </div>
+            
+            <button class="mobile-nav-toggle" onclick="toggleMobileNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="nav">
+                <div class="dropdown">
+                    <a href="#companies" class="dropdown-toggle">Companies</a>
+                    <div class="dropdown-menu">
+                        <a href="https://mavenengg.in/" target="_blank" class="dropdown-item">Maven Engineering Works</a>
+                        <a href="pmi-toolings.html" class="dropdown-item">PMI Toolings</a>
+                        <a href="#venkata-naga-sai-tools" class="dropdown-item">Venkata Naga Sai Tools</a>
+                        <a href="#tanvi-engineering-works" class="dropdown-item">Tanvi Engineering Works</a>
+                    </div>
+                </div>
+                <a href="products-services.html">Products & Services</a>
+            </nav>
+            
+            <div class="utility-links">
+                <a href="index.html#about">About us</a>
+                <a href="contact.html" class="active">Enquiry</a>
+                <a href="index.html#enquiry-info">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="contact-main">
+        <div class="contact-container">
+            <!-- Left Section -->
+            <div class="contact-left">
+                <!-- Breadcrumbs -->
+                <nav class="breadcrumbs">
+                    <a href="index.html">SVLR</a>
+                    <span class="separator">→</span>
+                    <span class="current">Enquiry</span>
+                </nav>
+
+                <!-- Contact Content -->
+                <div class="contact-content">
+                    <h1 class="contact-title">
+                        <span class="title-line">
+                            <span class="hex-bullet"> Every Project Starts
+                        </span>
+                        <span class="title-line">With a Plan.</span>
+                        <span class="subtitle">Make an Enquiry with Us</span>
+                    </h1>
+
+                    <p class="contact-description">
+                        Do you have questions or would you like to learn more about our products and services? Whether by e-mail, telephone or via our enquiry form – get in touch with us, we are happy to help you.
+                    </p>
+
+                    <!-- Enquiry Form -->
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <select name="subject" class="form-select" required>
+                                <option value="">Please select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="quote">Request Quote</option>
+                                <option value="support">Technical Support</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name *" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="company" placeholder="Company">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="E-Mail *" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Phone">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Type your message" rows="6" maxlength="500"></textarea>
+                            <span class="char-count">0</span>
+                        </div>
+
+                        <!-- Captcha Section -->
+                        <div class="captcha-section">
+                            <div class="captcha-container">
+                                <div class="captcha-image">
+                                    <span class="captcha-text">M Y Z X G</span>
+                                </div>
+                                <div class="captcha-input">
+                                    <input type="text" name="captcha" placeholder="Code in the image *" required>
+                                    <button type="button" class="refresh-captcha">
+                                        <i class="fas fa-sync-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <p class="captcha-instruction">Enter the characters shown in the image.</p>
+                        </div>
+
+                        <!-- Form Footer -->
+                        <div class="form-footer">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span class="checkmark"></span>
+                                I accept the privacy policy and terms of service
+                            </label>
+                            <button type="submit" class="send-button">
+                                Send
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="contact-right">
+                <div class="company-section">
+                    <div class="company-cards">
+                        <!-- SVLR Engineering Solutions -->
+                        <div class="company-card">
+                            <div class="company-logo-area">
+                                <img src="logo.png" alt="SVLR Logo" class="company-logo">
+                                <h3 class="company-name">SVLR Engineering Solutions</h3>
+                            </div>
+                            <div class="company-details">
+                                <h4 class="company-full-name">SVLR Engineering Solutions Pvt Ltd</h4>
+                                <p class="company-address">Plot No: 6-1-134, Room No.7, 2nd Floor, Beside HAL, Hanumam Temple Road, Balanagar,Hyderabad-42, Telangana.</p>
+                                <p class="company-email">svlrengineeringsolutions@gmail.com</p>
+                                <p class="company-phone">+91 9177398206</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Contact Tab -->
+    <div class="contact-tab" id="home-tab">
+        <span>Home</span>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="contact-script.js"></script>
+    <script>
+        // Mobile Navigation Toggle Function for this page
+        function toggleMobileNav() {
+            const nav = document.querySelector('.nav');
+            const toggle = document.querySelector('.mobile-nav-toggle');
+            
+            if (nav && toggle) {
+                nav.classList.toggle('active');
+                toggle.classList.toggle('active');
+                
+                // Prevent body scroll when mobile nav is open
+                if (nav.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            }
+        }
+    </script>
+</body>
+</html>

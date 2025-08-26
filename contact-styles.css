@@ -1,0 +1,910 @@
+/* Contact Page Specific Styles */
+
+/* Main Layout */
+.contact-main {
+    padding-top: 80px;
+    min-height: 100vh;
+    background: white;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: calc(100vh - 80px);
+    position: relative;
+}
+
+/* Left Section */
+.contact-left {
+    flex: 1;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: calc(100vh - 80px);
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: #666;
+}
+
+.breadcrumbs a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumbs a:hover {
+    color: #0052a3;
+}
+
+.breadcrumbs .separator {
+    margin: 0 10px;
+    color: #999;
+}
+
+.breadcrumbs .current {
+    color: #333;
+    font-weight: 500;
+}
+
+/* Contact Content */
+.contact-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.contact-title {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1a1a1a;
+}
+
+.title-line {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.hex-bullet {
+    color: #0066cc;
+    font-size: 2.2rem;
+    margin-right: 10px;
+}
+
+.subtitle {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #666;
+    margin-top: 10px;
+}
+
+.contact-description {
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    max-width: 500px;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999;
+}
+
+.form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 12px center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    padding-right: 40px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+    position: relative;
+}
+
+.char-count {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 12px;
+    color: #999;
+    background: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Captcha Section */
+.captcha-section {
+    margin-bottom: 30px;
+}
+
+.captcha-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.captcha-image {
+    background: #0066cc;
+    padding: 15px 20px;
+    border-radius: 8px;
+    min-width: 120px;
+    text-align: center;
+}
+
+.captcha-text {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: 'Courier New', monospace;
+}
+
+.captcha-input {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.captcha-input input {
+    flex: 1;
+}
+
+.refresh-captcha {
+    background: #0066cc;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.refresh-captcha:hover {
+    background: #0052a3;
+    transform: rotate(180deg);
+}
+
+.captcha-instruction {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+/* Form Footer */
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+    flex: 1;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.checkmark {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark {
+    background: #0066cc;
+    border-color: #0066cc;
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.send-button {
+    background: #0066cc;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+    min-width: 120px;
+}
+
+.send-button:hover {
+    background: #0052a3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+}
+
+/* Right Section */
+.contact-right {
+    flex: 1;
+    position: relative;
+    background: white;
+    padding: 40px;
+    overflow: hidden;
+}
+
+/* Company Section */
+.company-section {
+    position: sticky;
+    top: 40px;
+    height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Company Section */
+.company-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Company Cards */
+.company-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+    margin-top: 0;
+}
+
+.company-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    min-height: 280px;
+}
+
+.company-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #0066cc 0%, #0052a3 50%, #003d7a 100%);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.company-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 102, 204, 0.15);
+    border-color: rgba(0, 102, 204, 0.1);
+}
+
+.company-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* Company Logo Area */
+.company-logo-area {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 40px 30px;
+    text-align: center;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.company-logo-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.6s ease;
+}
+
+.company-card:hover .company-logo-area::before {
+    left: 100%;
+}
+
+.company-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    background: transparent;
+    transition: all 0.4s ease;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.company-card:hover .company-logo {
+    transform: scale(1.1);
+    filter: drop-shadow(0 4px 8px rgba(0, 102, 204, 0.2));
+}
+
+/* Fallback if logo doesn't load */
+.company-logo:not([src]), 
+.company-logo[src=""] {
+    display: none;
+}
+
+.company-logo-text {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.company-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 0;
+    text-transform: none;
+    letter-spacing: 0.5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: color 0.3s ease;
+}
+
+.company-card:hover .company-name {
+    color: #0066cc;
+}
+
+/* Company Details */
+.company-details {
+    padding: 35px 30px;
+    background: white;
+    position: relative;
+}
+
+.company-full-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 20px 0;
+    line-height: 1.3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.3px;
+    transition: color 0.3s ease;
+}
+
+.company-card:hover .company-full-name {
+    color: #0066cc;
+}
+
+.company-address,
+.company-email,
+.company-phone {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 12px 0;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
+    position: relative;
+    padding-left: 20px;
+}
+
+.company-address::before,
+.company-email::before,
+.company-phone::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 8px;
+    height: 8px;
+    background: #0066cc;
+    border-radius: 50%;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.company-card:hover .company-address::before,
+.company-card:hover .company-email::before,
+.company-card:hover .company-phone::before {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.company-email {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.company-email:hover {
+    color: #0052a3;
+    text-decoration: underline;
+}
+
+.company-phone {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Active Navigation State */
+.utility-links a.active {
+    color: #0066cc;
+    font-weight: 600;
+}
+
+/* Enhanced Responsive Design */
+@media (max-width: 1200px) {
+    .contact-container {
+        max-width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contact-container {
+        flex-direction: column;
+        min-height: auto;
+    }
+    
+    .contact-left {
+        padding: 40px 30px;
+        overflow-y: visible;
+        max-height: none;
+        flex: none;
+    }
+    
+    .contact-right {
+        height: auto;
+        padding: 30px;
+        overflow: visible;
+        flex: none;
+    }
+    
+    .company-section {
+        position: relative;
+        height: auto;
+        top: 0;
+    }
+    
+    .company-cards {
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 20px;
+        padding-bottom: 10px;
+        position: relative;
+        top: 0;
+        scroll-snap-type: x mandatory;
+    }
+    
+    .company-card {
+        min-width: 320px;
+        flex-shrink: 0;
+        min-height: 300px;
+        scroll-snap-align: start;
+    }
+    
+    .contact-title {
+        font-size: 2.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    
+    .contact-left {
+        padding: 30px 20px;
+    }
+    
+    .contact-right {
+        padding: 25px 20px;
+    }
+    
+    .contact-title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    .subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .contact-description {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 15px 18px;
+        font-size: 16px;
+    }
+    
+    .form-footer {
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
+    }
+    
+    .send-button {
+        width: 100%;
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+    
+    .captcha-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+    
+    .captcha-input {
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .captcha-text {
+        font-size: 18px;
+        letter-spacing: 2px;
+        padding: 12px 15px;
+    }
+    
+    .captcha-input input {
+        flex: 1;
+        padding: 12px 15px;
+        font-size: 16px;
+    }
+    
+    .company-cards {
+        gap: 15px;
+        padding: 0 10px 10px;
+    }
+    
+    .company-card {
+        min-width: 280px;
+        min-height: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-left {
+        padding: 25px 15px;
+    }
+    
+    .contact-right {
+        padding: 20px 15px;
+    }
+    
+    .contact-title {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .subtitle {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+    
+    .contact-description {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    
+    .send-button {
+        padding: 12px 18px;
+        font-size: 15px;
+    }
+    
+    .captcha-text {
+        font-size: 16px;
+        letter-spacing: 1px;
+        padding: 10px 12px;
+    }
+    
+    .captcha-input input {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .company-card {
+        min-width: 260px;
+        min-height: 260px;
+    }
+    
+    .company-logo-area {
+        padding: 20px 15px;
+        min-height: 100px;
+    }
+    
+    .company-logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .company-logo-text {
+        font-size: 1.3rem;
+    }
+    
+    .company-details {
+        padding: 20px 15px;
+    }
+    
+    .company-info {
+        gap: 15px;
+    }
+    
+    .contact-item {
+        padding: 12px;
+        gap: 10px;
+    }
+    
+    .contact-item i {
+        font-size: 1rem;
+        min-width: 16px;
+    }
+    
+    .contact-label {
+        font-size: 0.8rem;
+    }
+    
+    .company-address,
+    .company-email,
+    .company-phone {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .contact-left {
+        padding: 20px 12px;
+    }
+    
+    .contact-right {
+        padding: 15px 12px;
+    }
+    
+    .contact-title {
+        font-size: 1.6rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .contact-description {
+        font-size: 13px;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+    
+    .send-button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    .captcha-text {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+    
+    .captcha-input input {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+    
+    .company-card {
+        min-width: 240px;
+        min-height: 240px;
+    }
+    
+    .company-logo-area {
+        padding: 15px 12px;
+    }
+    
+    .company-logo {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .company-logo-text {
+        font-size: 1.1rem;
+    }
+    
+    .company-details {
+        padding: 15px 12px;
+    }
+    
+    .contact-item {
+        padding: 10px;
+        gap: 8px;
+    }
+    
+    .contact-item i {
+        font-size: 0.9rem;
+        min-width: 14px;
+    }
+    
+    .contact-label {
+        font-size: 0.7rem;
+    }
+    
+    .company-address,
+    .company-email,
+    .company-phone {
+        font-size: 0.8rem;
+    }
+}
+
+/* Landscape orientation for mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .contact-container {
+        min-height: auto;
+    }
+    
+    .contact-left {
+        padding: 20px 30px;
+    }
+    
+    .contact-right {
+        padding: 20px 30px;
+    }
+    
+    .company-cards {
+        flex-direction: row;
+        overflow-x: auto;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    .send-button {
+        min-height: 44px; /* Better touch target */
+    }
+    
+    .captcha-input input {
+        min-height: 44px;
+    }
+}
+
+/* Animation for form elements */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.form-group:nth-child(1) { animation-delay: 0.1s; }
+.form-group:nth-child(2) { animation-delay: 0.2s; }
+.form-group:nth-child(3) { animation-delay: 0.3s; }
+.form-group:nth-child(4) { animation-delay: 0.4s; }
+.form-group:nth-child(5) { animation-delay: 0.5s; }
+.form-group:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

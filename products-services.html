@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products & Services - SVLR ENGINEERING SOLUTIONS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="products-services-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo" onclick="window.location.href='index.html'">
+                <div class="logo-icon">
+                    <img src="logo.png" alt="SVLR Logo" class="logo-image">
+                </div>
+                <img src="company name.png" alt="SVLR Company Name" class="company-name-image">
+            </div>
+            
+            <button class="mobile-nav-toggle" onclick="toggleMobileNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="nav">
+                <div class="dropdown">
+                    <a href="#companies" class="dropdown-toggle">Companies</a>
+                    <div class="dropdown-menu">
+                        <a href="https://mavenengg.in/" target="_blank" class="dropdown-item">Maven Engineering Works</a>
+                        <a href="pmi-toolings.html" class="dropdown-item">PMI Toolings</a>
+                        <a href="#venkata-naga-sai-tools" class="dropdown-item">Venkata Naga Sai Tools</a>
+                        <a href="#tanvi-engineering-works" class="dropdown-item">Tanvi Engineering Works</a>
+                    </div>
+                </div>
+                <a href="products-services.html">Products & Services</a>
+            </nav>
+            
+            <div class="utility-links">
+                <a href="index.html#about">About us</a>
+                <a href="contact.html">Enquiry</a>
+                <a href="index.html#enquiry-info">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <video class="background-video" autoplay muted loop playsinline>
+                <source src="product and services video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-watermark">
+                <div class="watermark-container">
+                    <span class="watermark-text">SVLR</span>
+                    <span class="watermark-subtext">Engineering Solutions</span>
+                </div>
+            </div>
+            <div class="overlay overlay-1"></div>
+            <div class="overlay overlay-2"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Products & Services</h1>
+                <p>Comprehensive Engineering Solutions for Precision Manufacturing</p>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Products</h2>
+                <p>High-Quality Manufacturing Solutions</p>
+            </div>
+            <div class="products-grid">
+                <!-- Injection Molds -->
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Injection Molds</h3>
+                    <p>Precision injection molds for plastic manufacturing with advanced cooling systems and high-quality surface finishes.</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-check"></i> High Precision</span>
+                        <span><i class="fas fa-check"></i> Advanced Cooling</span>
+                        <span><i class="fas fa-check"></i> Quality Finish</span>
+                    </div>
+                </div>
+
+                <!-- Press Tools -->
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Press Tools</h3>
+                    <p>Custom press tools for metal forming operations including blanking, piercing, and forming applications.</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-check"></i> Custom Design</span>
+                        <span><i class="fas fa-check"></i> Metal Forming</span>
+                        <span><i class="fas fa-check"></i> Durability</span>
+                    </div>
+                </div>
+
+                <!-- Jigs & Fixtures -->
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Jigs & Fixtures</h3>
+                    <p>Specialized jigs and fixtures for accurate positioning and holding during machining and assembly operations.</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-check"></i> Precise Positioning</span>
+                        <span><i class="fas fa-check"></i> Custom Solutions</span>
+                        <span><i class="fas fa-check"></i> Quality Assurance</span>
+                    </div>
+                </div>
+
+                <!-- Die Casting Dies -->
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Die Casting Dies</h3>
+                    <p>High-performance die casting dies for aluminum, zinc, and magnesium alloys with optimized cooling systems.</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-check"></i> Multi-Alloy Support</span>
+                        <span><i class="fas fa-check"></i> Optimized Cooling</span>
+                        <span><i class="fas fa-check"></i> Long Life</span>
+                    </div>
+                </div>
+
+                <!-- Precision Machined Parts -->
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Precision Parts</h3>
+                    <p>High-precision machined components for various industries including automotive, aerospace, and medical sectors.</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-check"></i> High Precision</span>
+                        <span><i class="fas fa-check"></i> Multiple Materials</span>
+                        <span><i class="fas fa-check"></i> Industry Standards</span>
+                    </div>
+                </div>
+
+                <!-- Pattern Making -->
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-shapes"></i>
+                    </div>
+                    <h3>Pattern Making</h3>
+                    <p>Custom patterns for foundry applications with precise dimensions and surface finishes for quality casting.</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-check"></i> Custom Patterns</span>
+                        <span><i class="fas fa-check"></i> Foundry Ready</span>
+                        <span><i class="fas fa-check"></i> Quality Casting</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive Engineering Solutions</p>
+            </div>
+            <div class="services-grid">
+                <!-- Design & Engineering -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <h3>Design & Engineering</h3>
+                    <p>Complete design and engineering services including CAD/CAM modeling, simulation, and optimization for manufacturing processes.</p>
+                    <ul class="service-list">
+                        <li>CAD/CAM Design</li>
+                        <li>3D Modeling</li>
+                        <li>Simulation & Analysis</li>
+                        <li>Process Optimization</li>
+                    </ul>
+                </div>
+
+                <!-- Rapid Prototyping -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3>Rapid Prototyping</h3>
+                    <p>Quick turnaround prototyping services using advanced technologies for concept validation and testing.</p>
+                    <ul class="service-list">
+                        <li>3D Printing</li>
+                        <li>CNC Prototyping</li>
+                        <li>Concept Validation</li>
+                        <li>Testing Support</li>
+                    </ul>
+                </div>
+
+                <!-- Reverse Engineering -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <h3>Reverse Engineering</h3>
+                    <p>Comprehensive reverse engineering services to recreate and improve existing products and components.</p>
+                    <ul class="service-list">
+                        <li>3D Scanning</li>
+                        <li>CAD Recreation</li>
+                        <li>Design Analysis</li>
+                        <li>Improvement Suggestions</li>
+                    </ul>
+                </div>
+
+                <!-- Quality Assurance -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Quality Assurance</h3>
+                    <p>Rigorous quality control and testing services to ensure all products meet industry standards and specifications.</p>
+                    <ul class="service-list">
+                        <li>Dimensional Inspection</li>
+                        <li>Material Testing</li>
+                        <li>Performance Validation</li>
+                        <li>Documentation</li>
+                    </ul>
+                </div>
+
+                <!-- Maintenance & Repair -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>Maintenance & Repair</h3>
+                    <p>Comprehensive maintenance and repair services for tools, dies, and manufacturing equipment to ensure optimal performance.</p>
+                    <ul class="service-list">
+                        <li>Preventive Maintenance</li>
+                        <li>Emergency Repairs</li>
+                        <li>Performance Optimization</li>
+                        <li>Spare Parts Supply</li>
+                    </ul>
+                </div>
+
+                <!-- Technical Support -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Technical Support</h3>
+                    <p>Expert technical support and consultation services to help optimize your manufacturing processes and operations.</p>
+                    <ul class="service-list">
+                        <li>Process Consultation</li>
+                        <li>Technical Training</li>
+                        <li>Troubleshooting</li>
+                        <li>Continuous Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="industries-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Serving Industries</h2>
+                <p>Multi-Sector Manufacturing Solutions</p>
+            </div>
+            <div class="industries-grid">
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Automotive</h3>
+                    <p>Precision components and tooling for automotive manufacturing and assembly operations.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Medical</h3>
+                    <p>High-precision medical device components and surgical instrument manufacturing.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>FMCG</h3>
+                    <p>Packaging solutions and production tooling for fast-moving consumer goods.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Electronics</h3>
+                    <p>Precision components and assembly fixtures for electronic device manufacturing.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <i class="fas fa-oil-can"></i>
+                    </div>
+                    <h3>Oil & Gas</h3>
+                    <p>Specialized components and tooling for oil and gas exploration and production.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>General Manufacturing</h3>
+                    <p>Comprehensive manufacturing solutions for various industrial applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section class="equipment-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>State-of-the-Art Equipment</h2>
+                <p>Advanced Manufacturing Capabilities</p>
+            </div>
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>CNC Milling Centers</h3>
+                    <p>High-precision CNC milling machines with advanced control systems for complex machining operations.</p>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <h3>CNC Turning Centers</h3>
+                    <p>Multi-axis CNC turning centers for precision cylindrical and complex turned components.</p>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>EDM Machines</h3>
+                    <p>Electrical Discharge Machining equipment for intricate shapes and hard material processing.</p>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Surface Grinders</h3>
+                    <p>Precision surface grinding machines for achieving superior surface finishes and dimensional accuracy.</p>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <i class="fas fa-spinner"></i>
+                    </div>
+                    <h3>Multi-Spindle Machines</h3>
+                    <p>Wickman multi-spindle machines for high-volume production of precision components.</p>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>CAD/CAM Software</h3>
+                    <p>Latest CAD/CAM software for design, programming, and simulation of manufacturing processes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Tab -->
+    <div class="contact-tab" onclick="window.location.href='contact.html'">
+        <span>Enquiry</span>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="products-services-script.js"></script>
+    <script>
+        // Mobile Navigation Toggle Function for this page
+        function toggleMobileNav() {
+            const nav = document.querySelector('.nav');
+            const toggle = document.querySelector('.mobile-nav-toggle');
+            
+            if (nav && toggle) {
+                nav.classList.toggle('active');
+                toggle.classList.toggle('active');
+                
+                // Prevent body scroll when mobile nav is open
+                if (nav.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
